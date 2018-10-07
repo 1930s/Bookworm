@@ -11,13 +11,7 @@ import AVFoundation
 
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
 {
-    /*
-     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-     X  To be honest, I have no idea what this does, but X
-     X  the interwebz told me that it scans barcodes so  X
-     X  lets just go with that...                        X
-     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-     */
+    
     @IBOutlet weak var cameraView: UIView!
     
     var first = true
