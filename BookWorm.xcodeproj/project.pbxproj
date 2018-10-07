@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BF4D47AF792FC5794E60DB5 /* Pods_BookWormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0714B2B09A325D2CBF109EBC /* Pods_BookWormUITests.framework */; };
+		8E37DF8386EE6927B266E278 /* Pods_BookWorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8A7F2BAC2602814DA7107C /* Pods_BookWorm.framework */; };
+		DE29669F1D1BC61300A36A3F /* PasswordPageThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29669E1D1BC61300A36A3F /* PasswordPageThreeViewController.swift */; };
+		DE2966A11D1BC63300A36A3F /* PhonePageFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2966A01D1BC63300A36A3F /* PhonePageFourViewController.swift */; };
+		DE2966A31D1BC65700A36A3F /* DonePageFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2966A21D1BC65700A36A3F /* DonePageFiveViewController.swift */; };
+		DE2966A51D1BC9C300A36A3F /* EmailAndPasswordSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2966A41D1BC9C300A36A3F /* EmailAndPasswordSingleton.swift */; };
+		DE5923511D1920C9001ADB10 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5923501D1920C9001ADB10 /* SignUpPageViewController.swift */; };
+		DE5923551D193253001ADB10 /* WelcomePageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5923541D193253001ADB10 /* WelcomePageOneViewController.swift */; };
+		DE5923571D1A6809001ADB10 /* EmailPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5923561D1A6809001ADB10 /* EmailPageTwoViewController.swift */; };
+		DE68843F1D8351A200695619 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68843E1D8351A200695619 /* BookViewController.swift */; };
+		DE6884421D8666D300695619 /* MyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6884411D8666D300695619 /* MyBooksViewController.swift */; };
+		DE6884441D8666F100695619 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6884431D8666F100695619 /* NewPasswordViewController.swift */; };
+		DE6884461D86671200695619 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6884451D86671200695619 /* AboutUsViewController.swift */; };
+		DE7DB1161D72B2B900489ADE /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7DB1151D72B2B900489ADE /* BookTableViewCell.swift */; };
+		DE86192D1D2520AE00805143 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86192C1D2520AE00805143 /* MainViewController.swift */; };
+		DE86192F1D263FC000805143 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86192E1D263FC000805143 /* ScannerViewController.swift */; };
+		DE8619311D263FE400805143 /* NewBookFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8619301D263FE400805143 /* NewBookFormViewController.swift */; };
+		DE8619351D278ADF00805143 /* ConstraintsSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8619341D278ADF00805143 /* ConstraintsSingleton.swift */; };
 		DE9E126C1D127AA700A0179D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E126B1D127AA700A0179D /* AppDelegate.swift */; };
-		DE9E126E1D127AA700A0179D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E126D1D127AA700A0179D /* ViewController.swift */; };
+		DE9E126E1D127AA700A0179D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E126D1D127AA700A0179D /* LoginViewController.swift */; };
 		DE9E12711D127AA700A0179D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9E126F1D127AA700A0179D /* Main.storyboard */; };
 		DE9E12731D127AA700A0179D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9E12721D127AA700A0179D /* Assets.xcassets */; };
 		DE9E12761D127AA800A0179D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9E12741D127AA800A0179D /* LaunchScreen.storyboard */; };
 		DE9E12811D127AA800A0179D /* BookWormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E12801D127AA800A0179D /* BookWormTests.swift */; };
 		DE9E128C1D127AA800A0179D /* BookWormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E128B1D127AA800A0179D /* BookWormUITests.swift */; };
+		DEA16D711D2E61F8000FB45F /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA16D701D2E61F8000FB45F /* SegueFromLeft.swift */; };
+		DEA16D741D3643B5000FB45F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA16D731D3643B5000FB45F /* Book.swift */; };
+		DEDFF65D1D515A3B006E66D1 /* BookDetailsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFF65C1D515A3B006E66D1 /* BookDetailsFinder.swift */; };
+		DEDFF65F1D5270D0006E66D1 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFF65E1D5270D0006E66D1 /* MyInfoViewController.swift */; };
+		DEE7D7191D1D398F00AE2204 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE7D7181D1D398F00AE2204 /* GoogleService-Info.plist */; };
+		ED851E3930393883CE3558B3 /* Pods_BookWormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751D78602E24F89F157D2D43 /* Pods_BookWormTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +58,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0714B2B09A325D2CBF109EBC /* Pods_BookWormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookWormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D216B26E1E73B475D13245E /* Pods-BookWormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookWormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookWormTests/Pods-BookWormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2834655EA52FB222F29EB340 /* Pods-BookWorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookWorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookWorm/Pods-BookWorm.debug.xcconfig"; sourceTree = "<group>"; };
+		3C8A7F2BAC2602814DA7107C /* Pods_BookWorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookWorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC2774F8585DE1236721715 /* Pods-BookWormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookWormUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookWormUITests/Pods-BookWormUITests.release.xcconfig"; sourceTree = "<group>"; };
+		751D78602E24F89F157D2D43 /* Pods_BookWormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookWormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B451EAF007B6CC614FAC2712 /* Pods-BookWormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookWormUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookWormUITests/Pods-BookWormUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0F4CFB1D1F7CF800C873BE /* BookWorm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookWorm-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE29669E1D1BC61300A36A3F /* PasswordPageThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordPageThreeViewController.swift; sourceTree = "<group>"; };
+		DE2966A01D1BC63300A36A3F /* PhonePageFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhonePageFourViewController.swift; sourceTree = "<group>"; };
+		DE2966A21D1BC65700A36A3F /* DonePageFiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonePageFiveViewController.swift; sourceTree = "<group>"; };
+		DE2966A41D1BC9C300A36A3F /* EmailAndPasswordSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAndPasswordSingleton.swift; sourceTree = "<group>"; };
+		DE5923501D1920C9001ADB10 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpPageViewController.swift; path = ../SignUpPageViewController.swift; sourceTree = "<group>"; };
+		DE5923541D193253001ADB10 /* WelcomePageOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageOneViewController.swift; sourceTree = "<group>"; };
+		DE5923561D1A6809001ADB10 /* EmailPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailPageTwoViewController.swift; sourceTree = "<group>"; };
+		DE68843E1D8351A200695619 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		DE6884411D8666D300695619 /* MyBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBooksViewController.swift; sourceTree = "<group>"; };
+		DE6884431D8666F100695619 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		DE6884451D86671200695619 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		DE7DB1151D72B2B900489ADE /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		DE86192C1D2520AE00805143 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DE86192E1D263FC000805143 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		DE8619301D263FE400805143 /* NewBookFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBookFormViewController.swift; sourceTree = "<group>"; };
+		DE8619341D278ADF00805143 /* ConstraintsSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsSingleton.swift; sourceTree = "<group>"; };
+		DE99D4F81DF3CCB00061E893 /* BookWorm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookWorm.entitlements; sourceTree = "<group>"; };
 		DE9E12681D127AA700A0179D /* BookWorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookWorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9E126B1D127AA700A0179D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE9E126D1D127AA700A0179D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE9E126D1D127AA700A0179D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE9E12701D127AA700A0179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE9E12721D127AA700A0179D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE9E12751D127AA800A0179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +96,13 @@
 		DE9E12871D127AA800A0179D /* BookWormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookWormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9E128B1D127AA800A0179D /* BookWormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWormUITests.swift; sourceTree = "<group>"; };
 		DE9E128D1D127AA800A0179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA16D701D2E61F8000FB45F /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		DEA16D731D3643B5000FB45F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DEDFF65C1D515A3B006E66D1 /* BookDetailsFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsFinder.swift; sourceTree = "<group>"; };
+		DEDFF65E1D5270D0006E66D1 /* MyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		DEE7D7181D1D398F00AE2204 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E792C0AAF67AEDFE958525D7 /* Pods-BookWormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookWormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookWormTests/Pods-BookWormTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9AF2FF18FEBFBACEA839F32 /* Pods-BookWorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookWorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookWorm/Pods-BookWorm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E37DF8386EE6927B266E278 /* Pods_BookWorm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED851E3930393883CE3558B3 /* Pods_BookWormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +126,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF4D47AF792FC5794E60DB5 /* Pods_BookWormUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		362DC7DF9492B35E20697884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C8A7F2BAC2602814DA7107C /* Pods_BookWorm.framework */,
+				751D78602E24F89F157D2D43 /* Pods_BookWormTests.framework */,
+				0714B2B09A325D2CBF109EBC /* Pods_BookWormUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE6884401D86667300695619 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DE6884411D8666D300695619 /* MyBooksViewController.swift */,
+				DE6884431D8666F100695619 /* NewPasswordViewController.swift */,
+				DE6884451D86671200695619 /* AboutUsViewController.swift */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
+		DE8619321D278A5900805143 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E126D1D127AA700A0179D /* LoginViewController.swift */,
+				DE86192C1D2520AE00805143 /* MainViewController.swift */,
+				DEDFF65E1D5270D0006E66D1 /* MyInfoViewController.swift */,
+				DE7DB1151D72B2B900489ADE /* BookTableViewCell.swift */,
+				DE68843E1D8351A200695619 /* BookViewController.swift */,
+				DE8619361D278C0300805143 /* Account Creation */,
+				DE8619371D278C5200805143 /* Scanner and Books Entry */,
+				DE6884401D86667300695619 /* Options */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DE8619331D278A9C00805143 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				DE2966A41D1BC9C300A36A3F /* EmailAndPasswordSingleton.swift */,
+				DE8619341D278ADF00805143 /* ConstraintsSingleton.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		DE8619361D278C0300805143 /* Account Creation */ = {
+			isa = PBXGroup;
+			children = (
+				DE5923501D1920C9001ADB10 /* SignUpPageViewController.swift */,
+				DE5923541D193253001ADB10 /* WelcomePageOneViewController.swift */,
+				DE5923561D1A6809001ADB10 /* EmailPageTwoViewController.swift */,
+				DE29669E1D1BC61300A36A3F /* PasswordPageThreeViewController.swift */,
+				DE2966A01D1BC63300A36A3F /* PhonePageFourViewController.swift */,
+				DE2966A21D1BC65700A36A3F /* DonePageFiveViewController.swift */,
+			);
+			name = "Account Creation";
+			sourceTree = "<group>";
+		};
+		DE8619371D278C5200805143 /* Scanner and Books Entry */ = {
+			isa = PBXGroup;
+			children = (
+				DE86192E1D263FC000805143 /* ScannerViewController.swift */,
+				DE8619301D263FE400805143 /* NewBookFormViewController.swift */,
+			);
+			name = "Scanner and Books Entry";
+			sourceTree = "<group>";
+		};
 		DE9E125F1D127AA700A0179D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +206,8 @@
 				DE9E127F1D127AA800A0179D /* BookWormTests */,
 				DE9E128A1D127AA800A0179D /* BookWormUITests */,
 				DE9E12691D127AA700A0179D /* Products */,
+				FE8D98C831EA1C50BA7C0F16 /* Pods */,
+				362DC7DF9492B35E20697884 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +224,18 @@
 		DE9E126A1D127AA700A0179D /* BookWorm */ = {
 			isa = PBXGroup;
 			children = (
-				DE9E126B1D127AA700A0179D /* AppDelegate.swift */,
-				DE9E126D1D127AA700A0179D /* ViewController.swift */,
+				DE99D4F81DF3CCB00061E893 /* BookWorm.entitlements */,
 				DE9E126F1D127AA700A0179D /* Main.storyboard */,
+				DEA16D6F1D2E61A6000FB45F /* Model */,
+				DEA16D721D364369000FB45F /* View */,
+				DE8619321D278A5900805143 /* Controller */,
+				DE8619331D278A9C00805143 /* Singletons */,
 				DE9E12721D127AA700A0179D /* Assets.xcassets */,
 				DE9E12741D127AA800A0179D /* LaunchScreen.storyboard */,
+				DE9E126B1D127AA700A0179D /* AppDelegate.swift */,
 				DE9E12771D127AA800A0179D /* Info.plist */,
+				DEE7D7181D1D398F00AE2204 /* GoogleService-Info.plist */,
+				DE0F4CFB1D1F7CF800C873BE /* BookWorm-Bridging-Header.h */,
 			);
 			path = BookWorm;
 			sourceTree = "<group>";
@@ -125,6 +258,36 @@
 			path = BookWormUITests;
 			sourceTree = "<group>";
 		};
+		DEA16D6F1D2E61A6000FB45F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA16D731D3643B5000FB45F /* Book.swift */,
+				DEDFF65C1D515A3B006E66D1 /* BookDetailsFinder.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DEA16D721D364369000FB45F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEA16D701D2E61F8000FB45F /* SegueFromLeft.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FE8D98C831EA1C50BA7C0F16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2834655EA52FB222F29EB340 /* Pods-BookWorm.debug.xcconfig */,
+				E9AF2FF18FEBFBACEA839F32 /* Pods-BookWorm.release.xcconfig */,
+				0D216B26E1E73B475D13245E /* Pods-BookWormTests.debug.xcconfig */,
+				E792C0AAF67AEDFE958525D7 /* Pods-BookWormTests.release.xcconfig */,
+				B451EAF007B6CC614FAC2712 /* Pods-BookWormUITests.debug.xcconfig */,
+				5BC2774F8585DE1236721715 /* Pods-BookWormUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE9E12901D127AA800A0179D /* Build configuration list for PBXNativeTarget "BookWorm" */;
 			buildPhases = (
+				9B4EAAFBE8CAF259EAA0A9A6 /* [CP] Check Pods Manifest.lock */,
 				DE9E12641D127AA700A0179D /* Sources */,
 				DE9E12651D127AA700A0179D /* Frameworks */,
 				DE9E12661D127AA700A0179D /* Resources */,
+				BF29B0BEE3216B7FBCE952C2 /* [CP] Embed Pods Frameworks */,
+				7DD5DB59D305341284839FA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +315,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE9E12931D127AA800A0179D /* Build configuration list for PBXNativeTarget "BookWormTests" */;
 			buildPhases = (
+				8366DA6C9079B1F6BC49BF83 /* [CP] Check Pods Manifest.lock */,
 				DE9E12781D127AA800A0179D /* Sources */,
 				DE9E12791D127AA800A0179D /* Frameworks */,
 				DE9E127A1D127AA800A0179D /* Resources */,
+				7A9D8579440552B2AB6118D8 /* [CP] Embed Pods Frameworks */,
+				0DA28FF4E011898B70D908F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE9E12961D127AA800A0179D /* Build configuration list for PBXNativeTarget "BookWormUITests" */;
 			buildPhases = (
+				45E8ECA70B58AFABE20FABA4 /* [CP] Check Pods Manifest.lock */,
 				DE9E12831D127AA800A0179D /* Sources */,
 				DE9E12841D127AA800A0179D /* Frameworks */,
 				DE9E12851D127AA800A0179D /* Resources */,
+				5757EAE8F5546B57DA9E2E80 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,13 +364,25 @@
 				TargetAttributes = {
 					DE9E12671D127AA700A0179D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6Q357258GL;
+						LastSwiftMigration = 0810;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					DE9E127B1D127AA800A0179D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = DE9E12671D127AA700A0179D;
 					};
 					DE9E12861D127AA800A0179D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = DE9E12671D127AA700A0179D;
 					};
 				};
@@ -230,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9E12761D127AA800A0179D /* LaunchScreen.storyboard in Resources */,
+				DEE7D7191D1D398F00AE2204 /* GoogleService-Info.plist in Resources */,
 				DE9E12731D127AA700A0179D /* Assets.xcassets in Resources */,
 				DE9E12711D127AA700A0179D /* Main.storyboard in Resources */,
 			);
@@ -251,13 +435,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DA28FF4E011898B70D908F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookWormTests/Pods-BookWormTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45E8ECA70B58AFABE20FABA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5757EAE8F5546B57DA9E2E80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookWormUITests/Pods-BookWormUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9D8579440552B2AB6118D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookWormTests/Pods-BookWormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD5DB59D305341284839FA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookWorm/Pods-BookWorm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8366DA6C9079B1F6BC49BF83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B4EAAFBE8CAF259EAA0A9A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF29B0BEE3216B7FBCE952C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookWorm/Pods-BookWorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE9E12641D127AA700A0179D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9E126E1D127AA700A0179D /* ViewController.swift in Sources */,
+				DE5923511D1920C9001ADB10 /* SignUpPageViewController.swift in Sources */,
+				DE29669F1D1BC61300A36A3F /* PasswordPageThreeViewController.swift in Sources */,
+				DE6884441D8666F100695619 /* NewPasswordViewController.swift in Sources */,
+				DEA16D711D2E61F8000FB45F /* SegueFromLeft.swift in Sources */,
+				DEDFF65F1D5270D0006E66D1 /* MyInfoViewController.swift in Sources */,
+				DE7DB1161D72B2B900489ADE /* BookTableViewCell.swift in Sources */,
+				DE2966A11D1BC63300A36A3F /* PhonePageFourViewController.swift in Sources */,
+				DE5923571D1A6809001ADB10 /* EmailPageTwoViewController.swift in Sources */,
+				DE9E126E1D127AA700A0179D /* LoginViewController.swift in Sources */,
+				DE8619351D278ADF00805143 /* ConstraintsSingleton.swift in Sources */,
+				DE6884421D8666D300695619 /* MyBooksViewController.swift in Sources */,
+				DE2966A51D1BC9C300A36A3F /* EmailAndPasswordSingleton.swift in Sources */,
+				DEA16D741D3643B5000FB45F /* Book.swift in Sources */,
+				DE5923551D193253001ADB10 /* WelcomePageOneViewController.swift in Sources */,
+				DE68843F1D8351A200695619 /* BookViewController.swift in Sources */,
+				DE2966A31D1BC65700A36A3F /* DonePageFiveViewController.swift in Sources */,
+				DEDFF65D1D515A3B006E66D1 /* BookDetailsFinder.swift in Sources */,
 				DE9E126C1D127AA700A0179D /* AppDelegate.swift in Sources */,
+				DE86192D1D2520AE00805143 /* MainViewController.swift in Sources */,
+				DE8619311D263FE400805143 /* NewBookFormViewController.swift in Sources */,
+				DE6884461D86671200695619 /* AboutUsViewController.swift in Sources */,
+				DE86192F1D263FC000805143 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +676,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,7 +704,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanu Aluwalia (6Q357258GL)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -389,9 +717,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -399,68 +728,128 @@
 		};
 		DE9E12911D127AA800A0179D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2834655EA52FB222F29EB340 /* Pods-BookWorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BookWorm/BookWorm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6Q357258GL;
 				INFOPLIST_FILE = BookWorm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.vikramhegde.BookWorm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appnaholdings.bookworm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Firebase/** ${SRCROOT}/FirebaseStorage/** ${SRCROOT}/FirebaseAuth/**";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DE9E12921D127AA800A0179D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9AF2FF18FEBFBACEA839F32 /* Pods-BookWorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BookWorm/BookWorm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6Q357258GL;
 				INFOPLIST_FILE = BookWorm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.vikramhegde.BookWorm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appnaholdings.bookworm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Firebase/** ${SRCROOT}/FirebaseStorage/** ${SRCROOT}/FirebaseAuth/**";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		DE9E12941D127AA800A0179D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D216B26E1E73B475D13245E /* Pods-BookWormTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
 				INFOPLIST_FILE = BookWormTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.vikramhegde.BookWormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookWorm.app/BookWorm";
 			};
 			name = Debug;
 		};
 		DE9E12951D127AA800A0179D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E792C0AAF67AEDFE958525D7 /* Pods-BookWormTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
 				INFOPLIST_FILE = BookWormTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.vikramhegde.BookWormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookWorm.app/BookWorm";
 			};
 			name = Release;
 		};
 		DE9E12971D127AA800A0179D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B451EAF007B6CC614FAC2712 /* Pods-BookWormUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BookWormUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.vikramhegde.BookWormUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BookWorm;
 			};
 			name = Debug;
 		};
 		DE9E12981D127AA800A0179D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BC2774F8585DE1236721715 /* Pods-BookWormUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BookWormUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.vikramhegde.BookWormUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BookWorm;
 			};
 			name = Release;
@@ -484,6 +873,7 @@
 				DE9E12921D127AA800A0179D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE9E12931D127AA800A0179D /* Build configuration list for PBXNativeTarget "BookWormTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +882,7 @@
 				DE9E12951D127AA800A0179D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE9E12961D127AA800A0179D /* Build configuration list for PBXNativeTarget "BookWormUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +891,7 @@
 				DE9E12981D127AA800A0179D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
