@@ -2,7 +2,10 @@
 //  BookDetailsViewController.swift
 //  BarcodeScanning
 //
-//  Created by Hegde, Vandana on 6/28/16.
+//  Uses the number generated from the last VC
+//  to find the books using Google Books API and the BooksDetailFinder helper class
+//
+//  Created by Hegde, Vikram on 6/28/16.
 //  Copyright © 2016 Jordan Morgan. All rights reserved.
 //
 

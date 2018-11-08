@@ -2,7 +2,9 @@
 //  FacebookPageFourViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/23/16.
+//  Fourth page to ask for Phone for Phone auth
+//
+//  Created by Hegde, Vikram on 6/23/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

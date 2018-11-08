@@ -2,7 +2,10 @@
 //  SignUpPageViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/21/16.
+//  A View Controller for the sign up process.
+//  Held the page view controller code for all 4-5 pages of sign up information
+//
+//  Created by Hegde, Vikram on 6/21/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

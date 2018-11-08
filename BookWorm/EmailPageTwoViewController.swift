@@ -2,7 +2,9 @@
 //  EmailPageTwoViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/22/16.
+//  Second page which asks for User emails
+//
+//  Created by Hegde, Vikram on 6/22/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

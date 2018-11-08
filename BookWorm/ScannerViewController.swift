@@ -2,6 +2,10 @@
 //  ViewController.swift
 //  BarcodeScanning
 //
+//  THIS IS NOT MY CODE
+//
+//  ADDAPTED FOM GITHUB PROJECTS AND STACK OVERFLOW
+//
 //  Created by Jordan Morgan on 5/16/15.
 //  Copyright (c) 2015 Jordan Morgan. All rights reserved.
 //

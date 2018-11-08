@@ -2,7 +2,9 @@
 //  MyBooksViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 9/11/16.
+//  Class to see all book listings made by a single User
+//
+//  Created by Hegde, Vikram on 9/11/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

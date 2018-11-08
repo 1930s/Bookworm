@@ -2,7 +2,11 @@
 //  NewPasswordViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 9/11/16.
+//  View Controller to set a password.
+//  Just needs the new password since user
+//  is authed from opening the app
+//
+//  Created by Hegde, Vikram on 9/11/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

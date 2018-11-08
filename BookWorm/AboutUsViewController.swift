@@ -2,7 +2,11 @@
 //  AboutUsViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 9/11/16.
+//  A little information on the developers and the company
+//
+//  Just for college mainly
+//
+//  Created by Hegde, Vikram on 9/11/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

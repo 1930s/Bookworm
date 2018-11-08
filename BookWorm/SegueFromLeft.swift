@@ -2,7 +2,9 @@
 //  SegueFromLeft.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 7/7/16.
+//  A segue from the other non-default directions
+//
+//  Created by Hegde, Vikram on 7/7/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

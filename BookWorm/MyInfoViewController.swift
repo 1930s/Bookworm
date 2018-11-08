@@ -2,7 +2,9 @@
 //  MyInfoViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 8/3/16.
+//  A View Controller to view a users personal information.
+//
+//  Created by Hegde, Vikram on 8/3/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

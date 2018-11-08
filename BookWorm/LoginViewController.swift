@@ -2,7 +2,11 @@
 //  ViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/16/16.
+//  View Controller to handle the Login of different users
+//
+//  Incorporates FIRAuth
+//
+//  Created by Hegde, Vikram on 6/16/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

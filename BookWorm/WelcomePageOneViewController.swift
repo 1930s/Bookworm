@@ -2,7 +2,11 @@
 //  WelcomPageViewOneController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/21/16.
+//  The first sign up page that presented a cancel to go back
+//
+//  Other option begins account creation
+//
+//  Created by Hegde, Vikram on 6/21/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

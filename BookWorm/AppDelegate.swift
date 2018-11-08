@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/16/16.
+//  Created by Hegde, Vikram on 6/16/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

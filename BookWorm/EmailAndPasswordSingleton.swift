@@ -2,7 +2,9 @@
 //  EmailAndPasswordSingleton.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/23/16.
+//  A Singleton to hold the new user infomation for the account creation pages.
+//
+//  Created by Hegde, Vikram on 6/23/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

@@ -2,7 +2,10 @@
 //  MainViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/30/16.
+//  The View Controller where Users browse for Books
+//  to purchase. The users are seperated based on college
+//
+//  Created by Hegde, Vikram on 6/30/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

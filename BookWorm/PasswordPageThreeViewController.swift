@@ -2,7 +2,9 @@
 //  PasswordPageThreeViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/23/16.
+//  Third sign up page to ask for a password
+//
+//  Created by Hegde, Vikram on 6/23/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

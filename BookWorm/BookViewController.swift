@@ -2,7 +2,11 @@
 //  BookViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 9/9/16.
+//  View Controller to view a single Book. Displays all relavent information.
+//
+//  Includes all information from the Book Struct above.
+//
+//  Created by Hegde, Vikram on 9/9/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 
@@ -19,8 +23,8 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate 
     @IBOutlet weak var edition: UILabel!
     @IBOutlet weak var contactUser: UIButton!
     
-    var isMyBook = false
-    var myBook : Book = Book(isbn: "0", title: "An Error Occured", author: "0", edition: "0", price: "0", uid: "0",index: 0)
+    var isMyBook = false // whether or not to include a buy button
+    var myBook : Book = Book(isbn: "0", title: "An Error Occured", author: "0", edition: "0", price: "0", uid: "0",index: 0) // for the book model
     var pathSellingOrBuying : String = ""
     var cover : UIImage = UIImage(named: "noPhotoSelected")!
     let ref = FIRDatabase.database().reference()
@@ -30,7 +34,7 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate 
         super.viewDidLoad()
         
         let email: String! = FIRAuth.auth()?.currentUser?.email!
-        school = email!.substring(with: Range(email.index(email!.characters.index(of: "@")!, offsetBy: 1) ..< email!.characters.index(of: ".")!))
+        school = email!.substring(with: Range(email.index(email!.characters.index(of: "@")!, offsetBy: 1) ..< email!.characters.index(of: ".")!)) // the school of the user
 
 
         bookTitle.text = myBook.title

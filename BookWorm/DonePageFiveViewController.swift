@@ -2,7 +2,10 @@
 //  DonePageFiveViewController.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/23/16.
+//  Finishes the process and adds the user to
+//  Firebase if its all good on the forms
+//
+//  Created by Hegde, Vikram on 6/23/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 

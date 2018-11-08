@@ -2,7 +2,10 @@
 //  EmailAndPasswordSingleton.swift
 //  BookWorm
 //
-//  Created by Hegde, Vandana on 6/23/16.
+//  A singleton to store information about
+// the constraints of an object.
+//
+//  Created by Hegde, Vikram on 6/23/16.
 //  Copyright © 2016 Hegde, Vikram. All rights reserved.
 //
 
