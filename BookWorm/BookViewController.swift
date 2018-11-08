@@ -59,15 +59,16 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate 
             isMyBook = true
         }
     }
+    
     @IBAction func performButtonFunction(_ sender: AnyObject) { // can be remove or message user
         if isMyBook {
+            // Delete if the book is yours book
             let refreshAlert = UIAlertController(title: "Are you sure?", message: "Deleting an entry is permanent.", preferredStyle: UIAlertControllerStyle.alert)
             
             refreshAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { (action: UIAlertAction!) in
-                self.ref.child(self.school).child(self.pathSellingOrBuying).child(self.myBook.index.description).updateChildValues(["isDeleted" : true])
+                self.ref.child(self.school).child(self.pathSellingOrBuying).child(self.myBook.index.description).updateChildValues(["isDeleted" : true]) // Delete the entry using isDeleted flag in server
                 self.performSegue(withIdentifier: "toMain", sender: nil)
             }))
-            
             refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
                 refreshAlert.dismiss(animated: true, completion: nil)
             }))
@@ -75,7 +76,7 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate 
             return
         }
         
-        //CHANGE THIS LINE IF U ADD MULTIPLE WAYS OF CONTACTING A USER*****************************************************
+        // Email the owner of the book that you are interesting in buying it.
         ref.child(school).child("users").child(myBook.uid).child("email").observeSingleEvent(of: .value, with: { (snapshot) in
             if let email = snapshot.value as? String{
                 self.sendEmail(email)
@@ -87,6 +88,7 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate 
         
     }
     
+    // This function sends an email to the owner of a book to ask if they want a book
     func sendEmail(_ recipient : String) {
         let mailVC = MFMailComposeViewController()
         mailVC.mailComposeDelegate = self
@@ -98,7 +100,6 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate 
     }
     
     // MARK: - Email Delegate
-    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }

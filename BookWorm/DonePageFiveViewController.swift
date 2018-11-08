@@ -35,6 +35,7 @@ class DonePageFiveViewController: UIViewController {
             errorLabel.alpha = 1
             errorLabel.text = "Password less than 6 letters. Please choose a longer password then submit."
         }else{
+            // CLEAR TO CREATE
             
             errorLabel.alpha = 0
             

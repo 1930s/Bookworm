@@ -19,7 +19,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var divider: UISegmentedControl!
     
-    
+    // Variables
     let ref = FIRDatabase.database().reference()
     var school : String = ""
     var noEntries = false
@@ -32,6 +32,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         searchBar.delegate = self
         
+        // Parse the school out of the email
         let email: String! = FIRAuth.auth()?.currentUser?.email!
         school = email!.substring(with: Range(email.index(email!.characters.index(of: "@")!, offsetBy: 1) ..< email!.characters.index(of: ".")!))
         collegeNameLabel.text = school.capitalized
@@ -39,7 +40,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         addBooksToArray()
     }
     
-    
+    // Add the correct books based on the state of the divider
     @IBAction func dividerChanged(_ sender: AnyObject) {
         self.addBooksToArray()
     }
@@ -49,7 +50,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return 1
         }
         if inSearchMode{
-            return filteredBooks.count
+            return filteredBooks.count // filtered on search and divider
         }
         return books.count
     }
@@ -61,9 +62,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             tableView.reloadData()
         }
         else{
+            // Narrow the list to search filling books
             inSearchMode = true
             let lower = searchBar.text?.lowercased()
-            
             filteredBooks = books.filter({$0.title.lowercased().range(of: lower!) != nil || $0.author.lowercased().range(of: lower!) != nil || $0.isbn.lowercased().range(of: lower!) != nil || $0.edition.lowercased().range(of: lower!) != nil})
             tableView.reloadData()
         }
@@ -123,6 +124,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func addBooksToArray(){
+        // depending on the divider, filter the books.
+        // MARK: Firebase loading
         if self.divider.selectedSegmentIndex == 0{
             self.ref.child(self.school).child("selling").observeSingleEvent(of: .value, with: {    (snapshot) in
                 self.books.removeAll()

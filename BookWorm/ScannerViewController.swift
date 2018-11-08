@@ -122,7 +122,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
+    // MARK: My Functions; this is bit is me
     @IBAction func enterManually(_ sender: AnyObject) {
         performSegue(withIdentifier: "foundCode", sender: false)
     }

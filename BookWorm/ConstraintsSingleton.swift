@@ -19,7 +19,6 @@ class ConstraintsSingleton: NSObject {
     static let sharedInstance = ConstraintsSingleton()
     
     fileprivate override init(){
-        
     }
     
     func newYCoor(_ newYCoor: CGFloat){

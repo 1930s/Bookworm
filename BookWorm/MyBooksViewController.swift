@@ -38,6 +38,8 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
         self.addBooksToArray()
     }
     
+    // MARK: Delegate Functions
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if noEntries {
             return 1
@@ -64,6 +66,7 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
             
             cell.coverImage.image = UIImage(named: "loadingCover")
             
+            // Load the book images from the database Firestore
             let storageRef = FIRStorage.storage().reference(forURL: "gs://bookworm-9f703.appspot.com").child("\(books[indexPath.row].isbn)-\(books[indexPath.row].uid).png")
             storageRef.data(withMaxSize: 5000*5000, completion: { (data, error) in
                 if error == nil {
@@ -88,8 +91,11 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
         performSegue(withIdentifier: "bookSelected", sender: indexPath.row)
     }
     
+    // Gets a users books that they are buying and selling
+    // Realize in 2018 that they can be loaded once and toggeled just in appearance anf cuntionality rather than reloading it.
     func addBooksToArray(){
         if self.divider.selectedSegmentIndex == 0{
+            // Get all the books the user has and is attempting to sell
             self.ref.child(self.school).child("selling").observeSingleEvent(of: .value, with: {    (snapshot) in
                 self.books.removeAll()
                 if let booksJSON = snapshot.value as? NSArray{
@@ -104,6 +110,7 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
                         let tempUID = bookJSON["uid"] as! String
                         let isDeleted = bookJSON["isDeleted"] as! Bool
                         if !isDeleted  && tempUID == FIRAuth.auth()!.currentUser!.uid{
+                            // Load the model with the loaded books and add to the model array
                             self.books.append(Book(isbn: tempISBN, title: tempTitle, author: tempAuthor, edition: tempEdition, price: tempPrice, uid: tempUID, index: index))
                             self.noEntries = false
                         }
@@ -122,6 +129,7 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
                 print(error.localizedDescription)
             }
         }else if self.divider.selectedSegmentIndex == 1{
+            // Getting the books a user is attempting to purchase
             self.books.removeAll()
             self.ref.child(self.school).child("buying").observeSingleEvent(of: .value, with: {    (snapshot) in
                 if let booksJSON = snapshot.value as? NSArray{
@@ -136,6 +144,7 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
                         let tempUID = bookJSON["uid"] as! String
                         let isDeleted = bookJSON["isDeleted"] as! Bool
                         if !isDeleted && tempUID == FIRAuth.auth()!.currentUser!.uid{
+                            // Load the model with the loaded books and add to the model array
                             self.books.append(Book(isbn: tempISBN, title: tempTitle, author: tempAuthor, edition: tempEdition, price: tempPrice, uid: tempUID, index: index))
                             self.noEntries = false
                         }
@@ -146,6 +155,7 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
 
                     }
                 }else{
+                    // nothing loaded so we have no entries.
                     self.noEntries = true
                 }
                 DispatchQueue.main.async(execute: { () -> Void in
@@ -157,6 +167,7 @@ class MyBooksViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
+    // Prepares for segue to see the book details
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let bookVC = segue.destination as? BookViewController {
             print("ayy it works in finding right VC")

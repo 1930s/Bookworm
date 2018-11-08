@@ -14,6 +14,7 @@ import UIKit
 import Firebase
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
 // Consider refactoring the code to use the non-optional operators.
+// Now native in Swift
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   switch (lhs, rhs) {
   case let (l?, r?):
@@ -47,11 +48,11 @@ class NewPasswordViewController: UIViewController, UITextFieldDelegate {
         doneButton.isUserInteractionEnabled = false
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if passwordField.text != "" && passwordField.text == confirmField.text{
+        if passwordField.text != "" && passwordField.text == confirmField.text{ // if the fields have text and are the same
             errorLabel.alpha = 0
             doneButton.alpha = 0.9
             doneButton.isUserInteractionEnabled = true
-        }else if passwordField.text != "" && confirmField.text != "" && passwordField.text != confirmField.text{
+        }else if passwordField.text != "" && confirmField.text != "" && passwordField.text != confirmField.text{ // different text in fields
             errorLabel.text = "Passwords do not match."
             errorLabel.alpha = 1
             doneButton.alpha = 0.2
@@ -78,6 +79,7 @@ class NewPasswordViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func changePassword(_ sender: AnyObject) {
+        // Update the password in the database
         FIRAuth.auth()?.currentUser?.updatePassword(passwordField.text!, completion: { (error) in
             if error != nil {
                 print(error?.localizedDescription)

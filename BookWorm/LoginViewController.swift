@@ -39,6 +39,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         password.delegate = self
 
         
+        // if any of the fields change at all, update the singleton
         email.addTarget(self, action: #selector(LoginViewController.textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
         password.addTarget(self, action: #selector(LoginViewController.textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
         
@@ -58,6 +59,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.passwordLine.alpha = 0
         self.doneButton.alpha = 0
         self.signUpButton.alpha = 0
+        
+        // MARK: Slide in animations on the fields
         
         self.bookwormLogo.center.x -= self.view.bounds.width
         self.email.center.x += self.view.bounds.width
@@ -114,6 +117,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func signIn(_ sender: UIButton) {
+        // Use FIRAuth to auth the user with email and password
         FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!, completion: { (user, error) in
             if error != nil {
                 self.errorLabel.alpha = 1
@@ -122,8 +126,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 self.animateOut()
                 UIView.animate(withDuration: 0.6, delay: 0.6, options: [.curveEaseOut], animations: {
                     self.bookwormLogo.alpha = 0.0
-                }, completion: nil)
+                }, completion: nil) // I was new to Swift now I know you can add it to completion blocks. This project was done in 2015-16
                 self.delay(1.2){
+                    // go to main view controller after a second
                     self.performSegue(withIdentifier: "toMain", sender: nil)
                 }
             }
@@ -132,11 +137,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func signUp(_ sender: AnyObject) {
         self.animateOut()
+        // Go to sign up view controller
         UIView.animate(withDuration: 1.5, delay: 0, options: [.curveEaseOut], animations: {
             self.bookwormLogo.center.y = (self.view.bounds.height - 30)/2
             }, completion: nil)
         
         delay(1.6){
+            // Move the logo
             self.cache.newYCoor(self.bookwormLogo.center.y)
             self.cache.newLogoHeight(self.bookwormLogo.frame.height)
             self.performSegue(withIdentifier: "signUp", sender: nil)
@@ -145,6 +152,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidChange(_ textField: UITextField) {
+        // If the fields change and the text is incorrect then the user
+        // cannot sign in, so make the button unable to function
         if email.text != "" && password.text != ""{
             UIView.animate(withDuration: 0.6, delay: 0, options: [.curveEaseOut], animations: {
                 self.doneButton.alpha = 0.9
@@ -159,6 +168,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
         if textField == email {
             password.becomeFirstResponder()
             return true
@@ -168,12 +178,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // Didn't know there was a native delay, also I never use these anymore, as they cut the program flow
     func delay(_ delay:Double, closure:@escaping ()->()) {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
     
+    // Move all the fields to just off for the animation in.
     func animateOut(){
+        // MARK: Animations
+        
         UIView.animate(withDuration: 0.6, delay: 0, options: [.curveEaseOut], animations: {
             self.errorLabel.alpha = 0.0
             }, completion: nil)
@@ -205,11 +219,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 }
 
 extension UIView{
+    // Moves the field with the keyboard.
     func bindToKeyboard(){
         NotificationCenter.default.addObserver(self, selector: #selector(UIView.keyboardWillChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
     
+    // Adds the function I found online to change a textfield and update when changed
     func keyboardWillChange(_ notification: Notification) {
         
         let duration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
@@ -218,6 +234,7 @@ extension UIView{
         let targetFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let deltaY = targetFrame.origin.y - curFrame.origin.y
         
+        // MARK: Animation
         
         UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: UIViewKeyframeAnimationOptions(rawValue: curve), animations: {
             self.frame.origin.y+=deltaY
@@ -228,6 +245,7 @@ extension UIView{
 }
 
 extension UIImageView {
+    // fids an image from a URL and sets the image from the UIImageView to the ImageView
     public func imageFromUrl(_ urlStringWithoutJPEG: String) {
         let urlString = urlStringWithoutJPEG + ".jpeg"
         if let url = URL(string: urlString) {

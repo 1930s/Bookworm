@@ -17,8 +17,6 @@ class AboutUsViewController: UIViewController, MFMailComposeViewControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func rate(_ sender: AnyObject) {
@@ -29,6 +27,7 @@ class AboutUsViewController: UIViewController, MFMailComposeViewControllerDelega
         sendEmail()
     }
     
+    // Sends an email to us with suggestions
     func sendEmail() {
         let mailVC = MFMailComposeViewController()
         mailVC.mailComposeDelegate = self

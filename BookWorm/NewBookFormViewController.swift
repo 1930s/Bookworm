@@ -65,6 +65,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
 
     }
     
+    // If editting a field, set all images to transparent and move field to keyboard.
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         bookCoverImage.alpha = 0
         tapToChangeImage.alpha = 0
@@ -74,6 +75,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         return true
     }
     
+    // Cycle through the fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == titleField {
             authorsField.becomeFirstResponder()
@@ -141,9 +143,10 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         present(imagePickerController, animated: true, completion: nil)
     }
     
+    // Use API call to get information on the books
     func getBookInfo(){
         let urlString = "https://www.googleapis.com/books/v1/volumes?q=isbn:" + isbn
-        self.delay(7){
+        self.delay(7){ // Timeout is seven seconds if we cant find the book just leave
             if !self.foundBook{
                 self.errorLabel.alpha = 1
                 self.errorLabel.text = "Having trouble finding that. Please enter book manually."
@@ -162,6 +165,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
                 }
                 if let data = data,
                     let jsonResult = try? JSONSerialization.jsonObject(with: data, options: []), let arrayOfTitles = (jsonResult as AnyObject).value(forKeyPath: "items.volumeInfo.title") as? [String], let arrayOfAuthors = (jsonResult as AnyObject).value(forKeyPath: "items.volumeInfo.authors") as? [[String]], let arrayOfImageURLs = (jsonResult as AnyObject).value(forKeyPath: "items.volumeInfo.imageLinks.thumbnail") as? [String]{
+                    // If we find all the fields fill them out.
                     DispatchQueue.main.async {
                         self.titleField.text = arrayOfTitles.joined(separator: "")
                         self.authorsField.text = arrayOfAuthors.description.substring(with: Range<String.Index>(arrayOfAuthors.description.characters.index(arrayOfAuthors.description.startIndex, offsetBy: 2) ..< arrayOfAuthors.description.characters.index(arrayOfAuthors.description.endIndex, offsetBy: -2))).replacingOccurrences(of: "\"", with: "")
@@ -174,6 +178,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         }
     }
     
+    // User wants book then they are making a purcase listing
     @IBAction func userWantsBook(_ sender: UIButton) {
         if titleField.text == "" || authorsField.text == "" || priceField.text == "" || ISBNField.text == ""{
             errorLabel.alpha = 1
@@ -189,6 +194,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         fixFields()
         addImageToStorage()
         
+        // Update the sale or the buy for the user in the database and add it to the array of buyers and sellers
         ref.child(school).child("buying").observeSingleEvent(of: .value, with: { (snapshot) in
             
             let book : [AnyHashable: Any] = ["uid": (FIRAuth.auth()?.currentUser?.uid)!,
@@ -217,6 +223,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         }
     }
     
+    // If the user has the book then they ae listing to sell it
     @IBAction func userHasBook(_ sender: AnyObject) { // USER IS SELLING
         if titleField.text == "" || authorsField.text == "" || priceField.text == "" || ISBNField.text == ""{
             errorLabel.alpha = 1
@@ -231,6 +238,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         fixFields()
         addImageToStorage()
         
+        // Get the book information and update at the location at the selling point
         ref.child(school).child("selling").observeSingleEvent(of: .value, with: { (snapshot) in
             
             let book : [AnyHashable: Any] = ["uid": (FIRAuth.auth()?.currentUser?.uid)!,
@@ -259,6 +267,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
         }
     }
     
+    // Commit the image to the database using Firebase Storage
     func addImageToStorage(){ // Adds image to firebase storage
         if self.bookCoverImage.image == UIImage.init(named: "noPhotoSelected"){
         }else{
@@ -281,6 +290,8 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
 
     }
     
+    
+    // Formats to correct certain empty / misleading fields
     func fixFields(){
         
         if Int(ISBNField.text!)! == 0 || Double(priceField.text!)! == 0 {
@@ -301,6 +312,7 @@ class NewBookFormViewController: UIViewController, UITextFieldDelegate, UIImageP
 
     }
     
+    // I don't use these anymore as they are pretty damaging to program flow.
     func delay(_ delay:Double, closure:@escaping ()->()) {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
